@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>xyz.doremi.framework</groupId>
+    <artifactId>doremi-boot-dependencies</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>doremi-boot-dependencies</name>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <archetype.version>1.0.0-SNAPSHOT</archetype.version>
+        <spring.boot.version>2.6.8</spring.boot.version>
+        <lombok.version>1.18.20</lombok.version>
+        <hutool.version>5.7.16</hutool.version>
+        <springfox.version>3.0.0</springfox.version>
+        <pagehelper.version>1.2.10</pagehelper.version>
+        <mybatis.starter.version>2.2.0</mybatis.starter.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <!--SpringBoot Dependency-->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>2.6.8</version>
+                <scope>import</scope>
+                <type>pom</type>
+            </dependency>
+            <!--SpringBoot Dependency-->
+
+            <!--apache commons-->
+            <dependency>
+                <groupId>commons-lang</groupId>
+                <artifactId>commons-lang</artifactId>
+                <version>2.6</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-io</groupId>
+                <artifactId>commons-io</artifactId>
+                <version>2.6</version>
+            </dependency>
+
+            <!--lombok-->
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+            </dependency>
+            <!-- hutool -->
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-all</artifactId>
+                <version>${hutool.version}</version>
+            </dependency>
+            <!--SpringFox-->
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-boot-starter</artifactId>
+                <version>${springfox.version}</version>
+            </dependency>
+            <!-- pagehelper -->
+            <dependency>
+                <groupId>com.github.pagehelper</groupId>
+                <artifactId>pagehelper-spring-boot-starter</artifactId>
+                <version>${pagehelper.version}</version>
+            </dependency>
+            <!-- mybatis -->
+            <dependency>
+                <groupId>org.mybatis.spring.boot</groupId>
+                <artifactId>mybatis-spring-boot-starter</artifactId>
+                <version>${mybatis.starter.version}</version>
+            </dependency>
+            <!--fastjson-->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>1.2.83</version>
+            </dependency>
+
+            <!--COMMONS-->
+            <dependency>
+                <groupId>xyz.doremi.framework</groupId>
+                <artifactId>doremi-commons-lang</artifactId>
+                <version>${archetype.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>xyz.doremi.framework</groupId>
+                <artifactId>doremi-commons-web</artifactId>
+                <version>${archetype.version}</version>
+            </dependency>
+            <!--COMMONS-->
+
+            <!--STARTER && AUTO_CONFIGURATION-->
+
+            <!--STARTER && AUTO_CONFIGURATION-->
+        </dependencies>
+    </dependencyManagement>
+
+
+
+</project>

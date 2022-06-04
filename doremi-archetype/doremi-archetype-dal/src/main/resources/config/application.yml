@@ -1,0 +1,47 @@
+### >>> YAML语法：https://yaml.org
+### >>> SpringBoot配置参考：https://docs.spring.io/spring-boot/docs/2.6.8/reference/htmlsingle/#appendix.application-properties
+### >>> 配置文件请按照组件进行分类
+--- ### tomcat ###
+server:
+  port: 8618
+
+--- ### spring ###
+spring:
+  application:
+    name: 'doremi-dal-server'
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: 'jdbc:mysql://localhost:3306/test?useSSL=false&autoReconnect=true&characterEncoding=UTF-8'
+    username: 'localtest'
+    password: 'l0ca1-Pwd~'
+  main: ### 允许Bean循环引用
+    allow-circular-references: true
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+--- ### MyBatis ###
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml
+  configuration:
+    map-underscore-to-camel-case: true
+
+--- ### springfox ###
+springfox:
+  documentation:
+    enabled: false
+    swagger-ui:
+      base-url: docs
+
+--- ### logger ###
+logging:
+  group:
+    app: ### your package ###
+      - 'xyz.doremi.archetype'
+    middleware:
+      - 'xyz.doremi'
+  level:
+    root: info,
+    sql: info,
+    app: info,
+    middleware: warn

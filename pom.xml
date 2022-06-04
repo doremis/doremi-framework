@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>xyz.doremi.framework</groupId>
+    <artifactId>doremi-boot</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+
+    <packaging>pom</packaging>
+    <name>doremi-boot</name>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+
+    <modules>
+        <!--依赖模块：维护Spring以及公司中间件依赖版本-->
+        <module>doremi-boot-dependencies</module>
+        <!--公共模块：通用的传值对象-->
+        <module>doremi-commons-lang</module>
+        <!--公共模块：基于公司组件二次封装的工具等-->
+        <module>doremi-commons-web</module>
+        <!--自动配置：基于公司中间件实现的自动配置等-->
+        <module>doremi-boot-autoconfigure</module>
+        <!--公共依赖：新增Starter公共父模块-->
+        <module>doremi-boot-starters</module>
+        <!--公共依赖：SpringBoot的编译打包依赖的增强等-->
+        <!--公共依赖：新建工程都应该继承这个starter-->
+        <module>doremi-boot-parent-starter</module>
+        <!--骨架工程：骨架工程实现-->
+        <module>doremi-archetype</module>
+    </modules>
+
+</project>
