@@ -6,14 +6,14 @@
 
 ### 环境依赖
 
-| 基础依赖 | 依赖版本 | 文档地址 |
-| :---- | :---- | :---- |
-| Spring Boot | 2.6.8 | [Spring Boot 文档](https://docs.spring.io/spring-boot/docs/2.6.8/reference/html/) ([版本维护](https://spring.io/projects/spring-boot#support))
-| Spring Framework | 5.3.20.RELEASE | [Spring Framework 文档](https://docs.spring.io/spring-framework/docs/5.3.20/reference/html/)
-| Maven | 3.5+ | [Maven 官网](https://archive.apache.org/dist/maven/maven-3/)  [下载地址](https://archive.apache.org/dist/maven/maven-3/)
-| Tomcat | 8.0+ | [Tomcat 8.0 文档](https://tomcat.apache.org/tomcat-8.0-doc/) | 
-| Servlet | 3.1+ | [中文文档参考](https://www.iteye.com/blog/jinnianshilongnian-1912455) | 
-| JDK | 1.8+|
+| 基础依赖             | 依赖版本           | 文档地址                                                                                                                                     |
+|:-----------------|:---------------|:-----------------------------------------------------------------------------------------------------------------------------------------|
+| Spring Boot      | 2.6.8          | [Spring Boot 文档](https://docs.spring.io/spring-boot/docs/2.6.8/reference/html/) ([版本维护](https://spring.io/projects/spring-boot#support)) |
+| Spring Framework | 5.3.20.RELEASE | [Spring Framework 文档](https://docs.spring.io/spring-framework/docs/5.3.20/reference/html/)                                               |
+| Maven            | 3.5+           | [Maven 官网](https://archive.apache.org/dist/maven/maven-3/)  [下载地址](https://archive.apache.org/dist/maven/maven-3/)                       |
+| Tomcat           | 8.0+           | [Tomcat 8.0 文档](https://tomcat.apache.org/tomcat-8.0-doc/)                                                                               | 
+| Servlet          | 3.1+           | [中文文档参考](https://www.iteye.com/blog/jinnianshilongnian-1912455)                                                                          | 
+| JDK              | 1.8+           |                                                                                                                                          |
 
 ### 其他参考文档
 
